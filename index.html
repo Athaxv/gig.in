@@ -6,14 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body>
              <!-- Navbar  -->
     <div class="flex w-full  justify-around align-middle text-center  nav-list">
         <div class="flex text-center align-middle">
             <div class="nav-img1 relative mt-4">
-            <img class="bg-white text-black w-auto " src="./public/Group 434.png" alt="">
-            <img class="bg-white  nav-img2 -translate-y-10" src="./public/Bi.png" alt="">
+            <img class="first-img text-black w-auto " src="./public/Group 434.png" alt="">
+            <img class="bg-white first-img nav-img2 -translate-y-10" src="./public/Bi.png" alt="">
         </div>
             <p class="font-bold text-center mt-8 ml-2 ">BINSURE</p>
         </div>
@@ -138,24 +140,24 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <h1>Why Choose</h1>
         </div>
         <div class="text-center  choose-div2 mt-10">
-            <p class="choose-div2-para">Your house is more than a home. Let our home insurance coverage safeguard your home with the right coverage for your needs.</p>
+            <p class="choose-div2-para w-1/2 ml-80">Your house is more than a home. Let our home insurance coverage safeguard your home with the right coverage for your needs.</p>
         </div>
         <div class="flex mt-10  gap-10  justify-center">
             <div class="choose-box">
                 <h1>Tailored house 
                     insurance</h1>
                     <p class="choose-box-p">Get house insurance that is perfectly suited to your home and that fits your lifestyle. </p>
-                    <img class="choose-box-img  " src="./public/home-security 1.png" alt="">
+                    <img class="choose-box-img mb-6 " src="./public/home-security 1.png" alt="">
             </div>
             <div class="choose-box">
                 <h1>Outstanding claims experience</h1>
                     <p class="choose-box-p">Take advantage of the excellent 24/7 support with the largest claims team in Canada, whenever you need it most. </p>
-                    <img class="choose-box-img -mt-1" src="./public/icon_100 1.png" alt="">
+                    <img class="choose-box-img -mt-0" src="./public/icon_100 1.png" alt="">
             </div>
             <div class="choose-box">
                 <h1>Some of the most generous coverage on the market</h1>
-                    <p class="choose-box-p">Get peace of mind with a single limit of insurance covering all your property and up to $2,000,000 in personal liability coverage.</p>
-                    <img class="choose-box-img -mt-10" src="./public/icon_100 1 (1).png" alt="">
+                    <p class="choose-box-p -mt-2">Get peace of mind with a single limit of insurance covering all your property and up to $2,000,000 in personal liability coverage.</p>
+                    <img class="choose-box-img -mt-8" src="./public/icon_100 1 (1).png" alt="">
             </div>
             <div class="choose-box">
                 <h1>Bundle your house and car insurancee</h1>
@@ -198,7 +200,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
 
        <!-- Schedule -->
 
-    <section class="schedule mt-20 p-10 gap-40 flex align-middle items-center">
+    <section class="schedule mt-40 p-10 gap-40 flex align-middle items-center">
         <div class="schedule-left">
             <div class="schedule-left-p1">
                 <p>Whatever your needs, we can help</p>
@@ -213,7 +215,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
         <div class="schedule-right">
             <div class="flex">
                 <img class="schedule-img" src="./public/Group 757.png" alt="">
-                <img class="schedule-img-2" src="./public/Group 755.png" alt="">
+                <img class="schedule-img-2 shadow-none" src="./public/Group 755.png" alt="">
             </div>
         </div>
     </section>
@@ -247,7 +249,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <img src="./public/Group 751 (1).png" alt="">
         </div>
     </div>
-        <div class="info-lower flex gap-40 mt-20">
+        <div class="info-lower flex gap-40 mt-40">
             <div class="lower-left">
                 <img src="./public/Group 770.png" alt="">
             </div>
@@ -340,62 +342,114 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <button><img src="./public/arrow-left-s-line.png" alt=""></button>
         </div>
     </div>
-        <div class="faq-right">
-            <div>
-                <div class="faq-r-1">
-                    <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Is it mandatory to have house insurance in Canada</p>
-                    <button onclick="toggleBtn()"><img src="./public/arrow-left-s-line (1).png" alt=""></button>
+    <div class="faq-right" id="acc">
+        <div>
+            <div class="faq-r-1">
+                <div class="flex justify-between gap-5">
+                    <p class="faq-r-p">Is it mandatory to have house insurance in Canada?</p>
+                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                    <div class="mt-5 faq-r-p1">
-                        <p class="faq-r-p2 p-4">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
-                    </div>
+                <div class="mt-5 faq-r-p1">
+                    <p class="faq-r-p2 p-4">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
                 </div>
             </div>
-            <div class="mt-10">
-                <div class="faq-r-1">
-                    <div class="flex justify-between gap-5">
+        </div>
+
+        <div class="mt-10">
+            <div class="faq-r-1">
+                <div class="flex justify-between gap-5">
                     <p class="faq-r-p">How much is house insurance in Canada monthly?</p>
-                    <button onclick="toggleBtn()"><img src="./public/arrow-left-s-line (1).png" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                    <div class="mt-5 faq-r-p1 h-64">
-                        <p class="faq-r-p2 p-4">On a monthly basis, home insurance in Canada is determined based on your home’s location and its value as well as numerous other factors. It can vary depending on the location of your home, its age and condition, and other factors. See the question above for more details on how your insurance premium is calculated.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-32">
-                <div class="faq-r-1">
-                    <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Are house insurance premiums going up in Canada</p>
-                    <button onclick="toggleBtn()"><img src="./public/arrow-left-s-line (1).png" alt=""></button>
-                </div>
-                    <div class="mt-5 faq-r-p1 h-56">
-                        <p class="faq-r-p2 p-4">Home insurance coverage options have generally increased by 5 percent as of 2022 in Canada. One of the primary reasons for this is extreme weather conditions due to climate change, causing more homes to take weather-related damages.</p>
-                    </div>
+                <div class="mt-5 faq-r-p1">
+                    <p class="faq-r-p2 p-4">On a monthly basis, home insurance in Canada is determined based on your home’s location and its value as well as numerous other factors. It can vary depending on the location of your home, its age and condition, and other factors. See the question above for more details on how your insurance premium is calculated.</p>
                 </div>
             </div>
-            <div class="mt-20">
-                <div class="faq-r-1">
-                    <div class="flex justify-between gap-5">
+        </div>
+
+        <div class="mt-10">
+            <div class="faq-r-1">
+                <div class="flex justify-between gap-5">
+                    <p class="faq-r-p">Are house insurance premiums going up in Canada?</p>
+                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                </div>
+                <div class="mt-5 faq-r-p1 ">
+                    <p class="faq-r-p2 p-4">Home insurance coverage options have generally increased by 5 percent as of 2022 in Canada. One of the primary reasons for this is extreme weather conditions due to climate change, causing more homes to take weather-related damages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <div class="faq-r-1">
+                <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Does house insurance cost more if you have a mortgage?</p>
-                    <button onclick="toggleBtn()" id = "btn"><img src="./public/arrow-left-s-line (1).png" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                    <div class="mt-5 faq-r-p1 h-60">
-                        <p class="faq-r-p2 p-4">Yes. The number of mortgages registered against the property is considered when defining your insurance premium, and there are savings for properties that are mortgage free. Read the questions above for further details, talk to your broker or get a home insurance quote today to get your house insurance premium.</p>
-                    </div>
+                <div class="mt-5 faq-r-p1">
+                    <p class="faq-r-p2 p-4">Yes. The number of mortgages registered against the property is considered when defining your insurance premium, and there are savings for properties that are mortgage-free. Read the questions above for further details, talk to your broker, or get a home insurance quote today to get your house insurance premium.</p>
                 </div>
             </div>
-            <div class="mt-24">
-                <div class="faq-r-1">
-                    <div class="flex justify-between gap-5">
+        </div>
+
+        <div class="mt-10">
+            <div class="faq-r-1">
+                <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Can I claim a broken fence on my homeowner's insurance?</p>
-                    <button onclick="toggleBtn()"><img src="./public/arrow-left-s-line (1).png" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                    <div class="mt-5 faq-r-p1 h-56">
-                        <p class="faq-r-p2 p-4">It depends on your home insurance policy and other factors: the reasons why the fence was broken and if it is covered by an insured peril in your policy. If it is covered, outside structures can be claimed on your house insurance policy.</p>
-                    </div>
+                <div class="mt-5 faq-r-p1">
+                    <p class="faq-r-p2 p-4">It depends on your home insurance policy and other factors: the reasons why the fence was broken and if it is covered by an insured peril in your policy.</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+                
+
+
+
+                <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                          <p class="">Is it mandatory to have house insurance in Canada?</p>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body faq-r-p1">
+                          <p class="">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          How much is house insurance in Canada monthly?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> You can modify any of this with custom CSS or overriding Bootstrap's default variables.
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  
         </div>
     </section>
 
@@ -429,7 +483,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
     <div class="p-20 footer">
         <div class="footer-upper flex justify-between">
             <div class="flex footer-box">
-                <img class="h-20 w-20 text-black" src="./public/Group 532.png" alt="">
+                <img class="h-20 w-20 first-img1 text-black" src="./public/Group 532.png" alt="">
                 <p>P.O. Box 9999, Station BMontreal 
                     </p>
                     <p class="mt-5">OM M5M 3R4
@@ -463,6 +517,10 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <p class="mt-5 text-white">Copyright © 2024  Inc. All rights reserved.</p>
         </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
     <script src="./script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </html>

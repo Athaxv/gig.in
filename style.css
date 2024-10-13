@@ -10,6 +10,15 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+.first-img {
+    filter: grayscale(100%) brightness(100%);
+    background-color: #FFFFFF;
+}
+.first-img1{
+    filter: grayscale(100%) brightness(100%);
+    background-color: #353535;
 }
 .nav-list {
     max-height: 80px;
@@ -260,6 +269,7 @@
     border: 2px solid #D9D9D9;
     height: 450px;
     width: 330px;
+    color: #073141;
 }
 .choose-box h1{
     font-family: "Plus Jakarta Sans";
@@ -276,6 +286,7 @@
     line-height: 30px;
     padding: 1rem;
     margin-top: 20px;
+    color: #073141;
 }
 .choose-box-img{
     margin-top: 2.5rem;
@@ -440,6 +451,7 @@ font-weight: 700;
 line-height: 48px;
 text-align: left;
 color: #073141;
+
 }
 .com-first-p1 {
 font-family: Plus Jakarta Sans;
@@ -452,7 +464,9 @@ width: 277px;
 }
 .com-second {
     height: 505px;
-
+    /* background-image: url(./public/img.png);
+    background-size: cover; */
+    /* transform: translateX(-3rem); */
 }
 .com-second-1 {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -462,6 +476,10 @@ width: 277px;
     border: 1px solid #FFFFFF;
     border-radius: 24px;
     padding: 2rem 1rem;
+}
+.com-second-image{
+    background-image: url(./public/img.png);
+
 }
 .com-sec-p {
     font-family: Plus Jakarta Sans;
@@ -608,4 +626,44 @@ font-weight: 400;
 line-height: 34.2px;
 text-align: left;
 color: #073141;
+
+}
+ .faq-r-span {
+    transform: rotate(90deg);
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    display: flex;
+}
+/* #acc .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+} 
+ .faq-r-r:active{
+    max-height: 200px;
+}  
+*/
+.faq-r-1 {
+    margin-bottom: 10px; /* Spacing between items */
+    padding: 10px; /* Inner padding */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.faq-r-p1 {
+    display: none; /* Hide the content by default */
+    margin-top: 5px; /* Margin between question and answer */
+}
+
+.faq-r-span {
+    transition: transform 0.2s;
+}
+
+.active .faq-r-span {
+    transform: rotate(90deg); /* Rotate arrow when active */
+}
+
+.faq-r-p {
+    margin: 0; /* Remove default margin */
 }
