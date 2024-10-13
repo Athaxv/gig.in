@@ -10,4 +10,19 @@ function toggleAccordion(button) {
         content.style.display = "block"; // Expand the content
         parent.classList.add('active'); // Add active class
     }
+
+
+}
+
+function toggleHeight() {
+    var cont = document.querySelector('.faq-r-p1');
+    cont.classList.toggle('expanded');
+
+    var fix = document.querySelector('.faq-r-span')
+    fix.classList.toggle('open');
+}
+
+function hide () {
+    var slect = document.querySelector(".forgot")
+    slect.classList.toggle('hid');
 }

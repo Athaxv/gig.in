@@ -10,7 +10,17 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body>
-             <!-- Navbar  -->
+             
+    <div class="forgot flex justify-around align-middle">
+        <div>
+            <p class="forgot-p">Heads Up! Our site is currently undergoing maintenance. If you receive an error, please try again later. Thanks for your patience."</p>
+        </div>
+        <div>
+            <button onclick="hide()"><span class="forgot-s">&#10005;</span></button>
+        </div>
+    </div>
+    
+    <!-- Navbar  -->
     <div class="flex w-full  justify-around align-middle text-center  nav-list">
         <div class="flex text-center align-middle">
             <div class="nav-img1 relative mt-4">
@@ -347,9 +357,9 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <div class="faq-r-1">
                 <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Is it mandatory to have house insurance in Canada?</p>
-                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                <div class="mt-5 faq-r-p1">
+                <div class=" faq-r-p1" id="faq">
                     <p class="faq-r-p2 p-4">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
                 </div>
             </div>
@@ -359,9 +369,9 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <div class="faq-r-1">
                 <div class="flex justify-between gap-5">
                     <p class="faq-r-p">How much is house insurance in Canada monthly?</p>
-                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
-                <div class="mt-5 faq-r-p1">
+                <div class=" faq-r-p1">
                     <p class="faq-r-p2 p-4">On a monthly basis, home insurance in Canada is determined based on your home’s location and its value as well as numerous other factors. It can vary depending on the location of your home, its age and condition, and other factors. See the question above for more details on how your insurance premium is calculated.</p>
                 </div>
             </div>
@@ -371,7 +381,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <div class="faq-r-1">
                 <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Are house insurance premiums going up in Canada?</p>
-                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
                 <div class="mt-5 faq-r-p1 ">
                     <p class="faq-r-p2 p-4">Home insurance coverage options have generally increased by 5 percent as of 2022 in Canada. One of the primary reasons for this is extreme weather conditions due to climate change, causing more homes to take weather-related damages.</p>
@@ -383,7 +393,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <div class="faq-r-1">
                 <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Does house insurance cost more if you have a mortgage?</p>
-                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
                 </div>
                 <div class="mt-5 faq-r-p1">
                     <p class="faq-r-p2 p-4">Yes. The number of mortgages registered against the property is considered when defining your insurance premium, and there are savings for properties that are mortgage-free. Read the questions above for further details, talk to your broker, or get a home insurance quote today to get your house insurance premium.</p>
@@ -395,7 +405,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
             <div class="faq-r-1">
                 <div class="flex justify-between gap-5">
                     <p class="faq-r-p">Can I claim a broken fence on my homeowner's insurance?</p>
-                    <button onclick="toggleAccordion(this)"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold mb-1">&#x3e;</span></button>
                 </div>
                 <div class="mt-5 faq-r-p1">
                     <p class="faq-r-p2 p-4">It depends on your home insurance policy and other factors: the reasons why the fence was broken and if it is covered by an insured peril in your policy.</p>
