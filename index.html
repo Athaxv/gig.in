@@ -31,11 +31,11 @@
         </div>
         <nav class="flex gap-10">
             <ul class="flex justify-around gap-10 font-light h-80 nav-list">
-                <li class="font-medium nav-list-bar nav-list-home">Home</li>
-                <li class="nav-list-bar">Individual</li>
-                <li class="nav-list-bar">Commercial</li>
-                <li class="nav-list-bar">Travel</li>
-                <li class="nav-list-bar">Support</li>
+                <li class="font-medium nav-list-bar nav-list-home"><a href="/home">Home</a></li>
+                <li class="nav-list-bar"><a href="/individual">Individual</a></li>
+                <li class="nav-list-bar"><a href="/commercial">Commercial</a></li>
+                <li class="nav-list-bar"><a href="/travel">Travel</a></li>
+                <li class="nav-list-bar"><a href="/support">Support</a></li>
             </ul>
         
         <div class="nav-list gap-10">
@@ -353,113 +353,74 @@ After choosing the policy that’s the best fit, you can purchase your home insu
         </div>
     </div>
     <div class="faq-right" id="acc">
-        <div>
-            <div class="faq-r-1">
-                <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Is it mandatory to have house insurance in Canada?</p>
-                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
-                </div>
-                <div class=" faq-r-p1" id="faq">
-                    <p class="faq-r-p2 p-4">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-10">
-            <div class="faq-r-1">
-                <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">How much is house insurance in Canada monthly?</p>
-                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
-                </div>
-                <div class=" faq-r-p1">
-                    <p class="faq-r-p2 p-4">On a monthly basis, home insurance in Canada is determined based on your home’s location and its value as well as numerous other factors. It can vary depending on the location of your home, its age and condition, and other factors. See the question above for more details on how your insurance premium is calculated.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-10">
-            <div class="faq-r-1">
-                <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Are house insurance premiums going up in Canada?</p>
-                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
-                </div>
-                <div class="mt-5 faq-r-p1 ">
-                    <p class="faq-r-p2 p-4">Home insurance coverage options have generally increased by 5 percent as of 2022 in Canada. One of the primary reasons for this is extreme weather conditions due to climate change, causing more homes to take weather-related damages.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-10">
-            <div class="faq-r-1">
-                <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Does house insurance cost more if you have a mortgage?</p>
-                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold">&#x3e;</span></button>
-                </div>
-                <div class="mt-5 faq-r-p1">
-                    <p class="faq-r-p2 p-4">Yes. The number of mortgages registered against the property is considered when defining your insurance premium, and there are savings for properties that are mortgage-free. Read the questions above for further details, talk to your broker, or get a home insurance quote today to get your house insurance premium.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-10">
-            <div class="faq-r-1">
-                <div class="flex justify-between gap-5">
-                    <p class="faq-r-p">Can I claim a broken fence on my homeowner's insurance?</p>
-                    <button onclick="toggleHeight()"><span class="faq-r-span font-semibold mb-1">&#x3e;</span></button>
-                </div>
-                <div class="mt-5 faq-r-p1">
-                    <p class="faq-r-p2 p-4">It depends on your home insurance policy and other factors: the reasons why the fence was broken and if it is covered by an insured peril in your policy.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-                
-
-
-
-                <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                          <p class="">Is it mandatory to have house insurance in Canada?</p>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body faq-r-p1">
-                          <p class="">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
-                        </div>
-                      </div>
+        <!-- <div>
+            <div>
+                <div class="faq-r-1">
+                    <div class="flex justify-between gap-5">
+                    <p class="faq-r-p mt-1">Is it mandatory to have house insurance in Canada</p>
+                    <button class="faq-r-r"><span class="faq-r-span font-semibold">&#x3e;</span></button>
+                </div> 
+                    <div class="mt-5 faq-r-p1 faq-content">
+                        <p class="faq-r-p2 p-4 ">In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you have a house insurance policy as part of the financing agreement.</p>
                     </div>
-                  
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          How much is house insurance in Canada monthly?
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> You can modify any of this with custom CSS or overriding Bootstrap's default variables.
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                  
+                </div>
+            </div>
+            
+            </div>
+          </div>         -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-checkbox">
+            <label for="faq1" class="faq-title">
+              <h2>Is it mandatory to have house insurance in Canada?</h2>
+              <span class="icon">&#x3e;</span>
+            </label>
+            <div class="faq-content">
+              <p>In Canada, home insurance isn’t mandatory. However, most banks and mortgage loaners will expect you to have a house insurance policy as part of the financing agreement.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-checkbox">
+            <label for="faq2" class="faq-title">
+              <h2>How much is house insurance in Canada monthly?</h2>
+              <span class="icon">&#x3e;</span>
+            </label>
+            <div class="faq-content">
+              <p class="faq-sp">On a monthly basis, home insurance in Canada is determined based on your home’s location and its value as well as numerous other factors. It can vary depending on the location of your home, its age and condition, and other factors. See the question above for more details on how your insurance premium is calculated.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-checkbox">
+            <label for="faq3" class="faq-title">
+              <h2>Are house insurance premiums going up in Canada??</h2>
+              <span class="icon">&#x3e;</span>
+            </label>
+            <div class="faq-content">
+              <p>Home insurance coverage options have generally increased by 5 percent as of 2022 in Canada. One of the primary reasons for this is extreme weather conditions due to climate change, causing more homes to take weather-related damages.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-checkbox">
+            <label for="faq4" class="faq-title">
+              <h2>Does house insurance cost more if you have a mortgage?</h2>
+              <span class="icon">&#x3e;</span>
+            </label>
+            <div class="faq-content">
+              <p>Yes. The number of mortgages registered against the property is considered when defining your insurance premium, and there are savings for properties that are mortgage free. Read the questions above for further details, talk to your broker or get a home insurance quote today to get your house insurance premium.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <input type="checkbox" id="faq5" class="faq-checkbox">
+            <label for="faq5" class="faq-title">
+              <h2>Can I claim a broken fence on my homeowner's insurance?</h2>
+              <span class="icon">&#x3e;</span>
+            </label>
+            <div class="faq-content">
+              <p>It depends on your home insurance policy and other factors: the reasons why the fence was broken and if it is covered by an insured peril in your policy. If it is covered, outside structures can be claimed on your house insurance policy. </p>
+            </div>
+          </div>
         </div>
     </section>
 
@@ -476,7 +437,7 @@ After choosing the policy that’s the best fit, you can purchase your home insu
 
 
 
-    <section class="faq p-10 flex text-center gap-80 justify-center align-middle ">
+    <section class="faq p-10 mt-20 flex text-center gap-80 justify-center align-middle ">
         <div>
             <p class="faq-p1">Change insurance for good</p>
             <p class="faq-p2">Join the team that is making health insurance simple, transparent, and human.</p>
