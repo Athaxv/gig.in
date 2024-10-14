@@ -562,6 +562,7 @@ color: #FFFFFF;
 }
 .footer-box-1 {
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 500px;
 }
 .footer-box-2 {
     line-height: 35px;
@@ -753,3 +754,15 @@ color: #FFFFFF
     height: 0;
 }
 
+
+       /* Responsiveness  */
+/* 
+       @media (max-width: 768px) {
+        /* Adjust navbar layout for tablets */
+        /* .flex {
+          flex-direction: column;
+          justify-content: flex-start;
+        }  */
+
+
+        
